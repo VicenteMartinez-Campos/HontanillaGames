@@ -140,7 +140,7 @@ body {
     padding: 1.25rem;
 }
 
-.foto_perfil_lobby {
+.avatar_lobby {
     max-width: 150px;
 }
 
@@ -322,9 +322,10 @@ body {
     padding: 1.5rem;
 }
 
-.avatar-grande {
+.avatar-personaje {
+    max-width: 200px;
     font-size: 4rem;
-    background: var(--color-fondo);
+    background: #ffffff;
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid var(--color-borde);
@@ -415,12 +416,6 @@ body {
     height: 1.1rem;
     accent-color: var(--color-primario);
     cursor: pointer;
-}
-
-.divisor {
-    border: none;
-    border-top: 1px solid var(--color-borde);
-    margin: 0.5rem 0;
 }
 
 .opciones-peligro {
