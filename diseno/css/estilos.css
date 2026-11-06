@@ -1,0 +1,439 @@
+:root {
+    --color-fondo: #0f172a;
+    --color-superficie: #1e293b;
+    --color-texto: #f8fafc;
+    --color-texto-secundario: #94a3b8;
+    --color-borde: #334155;
+    --color-primario: #8b5cf6;
+    --color-aura: #fbbf24;
+    --fuente-principal: system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    margin: 0;
+}
+
+/*Index.html*/
+.logo {
+    font-size: 8rem;
+    align-items: center;
+    padding: auto;
+    width: 180px;
+    align-self: center;
+}
+
+.pantalla-centrada {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    padding: 1.5rem;
+}
+
+.bienvenida {
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.boton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: var(--color-primario);
+    color: #ffffff;
+}
+
+/*Apodo.html*/
+.pantalla-centrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.pantalla-centrada .tarjeta {
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pantalla-centrada header {
+    text-align: center;
+}
+
+.pantalla-centrada form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pantalla-centrada label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pantalla-centrada input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-borde);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-size: 1rem;
+    outline: none;
+}
+
+/*Lobby.html*/
+.tarjeta {
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-personaje {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+}
+
+.foto_perfil_lobby {
+    max-width: 150px;
+}
+
+
+.info-personaje h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
+}
+
+.info-personaje p {
+    font-size: 0.85rem;
+    text-align: left;
+    color: var(--color-texto-secundario);
+}
+
+.info-personaje strong {
+    color: var(--color-aura);
+}
+
+.boton--bonus {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #ffffff;
+    width: 100%;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+    text-align: center;
+}
+
+.seccion-juegos h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.rejilla-juegos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tarjeta-juego {
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-juego h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.tarjeta-juego p {
+    color: var(--color-texto-secundario);
+    font-size: 0.85rem;
+}
+
+.proximamente {
+    background-color: rgba(139, 92, 246, 0.15);
+    color: var(--color-primario);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-superficie);
+    padding: 0.75rem 1.5rem;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.logo_barra {
+    margin-bottom: -12px;
+    align-items: center;
+    width: 40px;
+    align-self: center;
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-superficie);
+    border-top: 1px solid var(--color-borde);
+    padding: 0.75rem 0;
+    margin-top: auto;
+}
+
+.menu-navegacion a {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.menu-navegacion a.activo {
+    color: var(--color-primario);
+}
+
+/*Tienda.html*/
+
+.principal {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+.principal h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.rejilla-tienda-completa {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.rejilla-tienda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tarjeta span {
+    font-size: 2rem;
+}
+
+.tarjeta div {
+    flex: 1;
+}
+
+.tarjeta h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.tarjeta p {
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+}
+
+.tarjeta strong {
+    color: var(--color-aura);
+}
+
+/*Personaje.html*/
+.rejilla-personaje-completa {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.columna-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.avatar-grande {
+    font-size: 4rem;
+    background: var(--color-fondo);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-borde);
+}
+
+.equipamiento-usuario {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.equipamiento-actual {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+    text-align: left;
+    background: var(--color-fondo);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-borde);
+}
+
+.columna-inventario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.columna-inventario h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+/*Configuracion.html*/
+.tarjeta-configuracion {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tarjeta-configuracion form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.grupo-formulario input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-borde);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-size: 1rem;
+    outline: none;
+}
+
+.grupo-formulario input[type="range"] {
+    accent-color: var(--color-primario);
+    cursor: pointer;
+}
+
+.checkbox-grupo label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-grupo input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--color-primario);
+    cursor: pointer;
+}
+
+.divisor {
+    border: none;
+    border-top: 1px solid var(--color-borde);
+    margin: 0.5rem 0;
+}
+
+.opciones-peligro {
+    display: flex;
+    justify-content: center;
+}
+
+.boton--secundario {
+    background-color: transparent;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
+.boton--secundario:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+}
