@@ -255,7 +255,6 @@ body {
 }
 
 /*Tienda.html*/
-
 .principal {
     flex: 1;
     max-width: 900px;
@@ -362,6 +361,18 @@ body {
 .columna-inventario h3 {
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
+}
+
+@media (min-width: 48rem) {
+    .rejilla-personaje-completa {
+        flex-direction: row;
+    }
+    .columna-avatar {
+        flex: 1;
+    }
+    .columna-inventario {
+        flex: 1.5;
+    }
 }
 
 /*Configuracion.html*/

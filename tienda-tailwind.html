@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tienda - Hontanilla Games</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="bg-slate-950 text-slate-100 flex flex-col min-h-screen">
+        <!-- Barra superior común -->
+        <header class="flex justify-between items-center bg-slate-900 px-6 py-3 border-b border-slate-800">
+            <div class="font-bold text-lg">🎮 Hontanilla Games</div>
+            <div class="text-right">
+                <p class="text-sm"><span data-dato="aura">1.000</span> de aura ✨</p>
+                <div class="text-xs text-slate-400" data-dato="apodo">Jugador</div>
+            </div>
+        </header>
+
+        <!-- Contenido principal de la Tienda -->
+        <main class="flex-1 max-w-4xl w-full mx-auto p-6">
+            
+            <h2 class="text-2xl font-bold text-center mb-6">Tienda</h2>
+
+            <!-- Contenedor en dos columnas -->
+            <div class="flex flex-col md:flex-row gap-4">
+                
+                <!-- Columna 1 -->
+                <div class="flex-1 flex flex-col gap-4">
+                    <article class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                        <span class="text-3xl">👑</span>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-base">Casco</h3>
+                            <p class="text-xs text-slate-400">Nivel 1 - <strong class="text-amber-400">250 aura</strong></p>
+                        </div>
+                        <button class="bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Comprar</button>
+                    </article>
+
+                    <article class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                        <span class="text-3xl">🧥</span>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-base">Armadura</h3>
+                            <p class="text-xs text-slate-400">Nivel 2 - <strong class="text-amber-400">500 aura</strong></p>
+                        </div>
+                        <button class="bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Comprar</button>
+                    </article>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="flex-1 flex flex-col gap-4">
+                    <article class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                        <span class="text-3xl">🥾</span>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-base">Botas</h3>
+                            <p class="text-xs text-slate-400">Nivel 1 - <strong class="text-amber-400">300 aura</strong></p>
+                        </div>
+                        <button class="bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Comprar</button>
+                    </article>
+
+                    <article class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                        <span class="text-3xl">🛡️</span>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-base">Accesorio</h3>
+                            <p class="text-xs text-slate-400">Nivel 3 - <strong class="text-amber-400">750 aura</strong></p>
+                        </div>
+                        <button class="bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Comprar</button>
+                    </article>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Menú de navegación inferior fijo -->
+        <nav class="flex justify-around bg-slate-900 border-t border-slate-800 py-3 mt-auto">
+            <a href="lobby.html" class="text-slate-400 text-sm font-semibold">Lobby</a>
+            <a href="tienda.html" class="text-violet-500 text-sm font-semibold">Tienda</a>
+            <a href="personaje.html" class="text-slate-400 text-sm font-semibold">Personaje</a>
+            <a href="configuracion.html" class="text-slate-400 text-sm font-semibold">Configuración</a>
+        </nav>
+
+    </body>
+</html>
